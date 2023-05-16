@@ -59,7 +59,13 @@ const Category = ()=>{
     const navigate = useNavigate()
     const handleSignUp = ()=>{
         window.localStorage.setItem("genres", JSON.stringify([...categories]))
+        if(categories.length>2)
+        {
         navigate("/browse")
+        }
+        else{
+            alert("Please select atleast 3 genres");
+        }
     }
     return (
         <div className={styles.body}>
