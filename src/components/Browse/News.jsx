@@ -7,7 +7,7 @@ const News = ()=>{
     console.log(news)
     useEffect(()=>{
         const fetchNews = async()=>{
-           await fetch("https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=fd9bc6cf53544f1e97daa883b2374d5c")
+           await fetch("https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=fd9bc6cf53544f1e97daa883b2374d5c") //PLEASE use your API KEY as my API KEY IS limited you can you API KEY from "https://newsapi.org/account"
                 .then(async(data)=>await data.json()).then((res)=>setNews(res.articles[0]))
         }
         fetchNews();
