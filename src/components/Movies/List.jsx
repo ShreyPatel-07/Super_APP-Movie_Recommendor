@@ -7,7 +7,7 @@ const List = ({genre})=>{
         const options = {
             method: 'GET',
             headers: {
-                'X-RapidAPI-Key': 'd9e4409626msh17b0632a7c90e90p1b766djsn2226816136dd',
+                'X-RapidAPI-Key': 'd9e4409626msh17b0632a7c90e90p1b766djsn2226816136dd', //PLEASE use your API KEY as my API KEY IS limited you can find your API KEY from "https://rapidapi.com/SAdrian/api/moviesdatabase/"
                 'X-RapidAPI-Host': 'moviesdatabase.p.rapidapi.com'
             }
         };
