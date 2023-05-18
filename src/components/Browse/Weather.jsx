@@ -7,7 +7,7 @@ const Weather = ()=>{
     // console.log(weather)
     useEffect(()=>{
         const fetchWeather = async()=>{
-            await fetch("http://api.weatherapi.com/v1/current.json?key=3efbed3cb43749c6894135917232604&q=Gandhinagar&aqi=no") //PLEASE use your API KEY as my API KEY IS limited you can you API KEY from "https://www.weatherapi.com/my/"
+            await fetch("http://api.weatherapi.com/v1/current.json?key=3efbed3cb43749c6894135917232604&q=Gandhinagar&aqi=no") //PLEASE use your API KEY as my API KEY IS limited you can find your API KEY from "https://www.weatherapi.com/my/"
                 .then(async(data)=>await data.json()).then((data)=>setWeather(data)) 
         }
         fetchWeather()
